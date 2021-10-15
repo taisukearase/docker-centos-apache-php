@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  evms-conts:
+    build: ./docker
+    ports:
+      - 80:80
+    volumes:
+      - .:/var/www/html
+    working_dir: /var/www/html
+    container_name: evms-conts
+    platform: 'linux/amd64'
