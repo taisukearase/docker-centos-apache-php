@@ -83,4 +83,3 @@ COPY --from=composer /usr/bin/composer /usr/bin/composer
 
 RUN systemctl enable httpd.service
 EXPOSE 80
-# CMD ["/usr/sbin/init"]
